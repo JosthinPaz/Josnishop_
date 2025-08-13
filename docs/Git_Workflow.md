@@ -1,4 +1,4 @@
-# 🧠 Git Workflow
+# Git Workflow
 
 Este documento define las prácticas estándar para trabajar con Git en este proyecto, con el fin de mantener un flujo de trabajo limpio, colaborativo y eficiente.
 
