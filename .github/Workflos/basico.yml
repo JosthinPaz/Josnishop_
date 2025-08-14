@@ -1,0 +1,34 @@
+name: CI Básico
+
+# Define los eventos que dispararán el flujo de trabajo
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Define los 'jobs' (tareas) que se ejecutarán
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Paso 1: Obtener el código del repositorio
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      # Paso 2: Configurar el ambiente (por ejemplo, Node.js)
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      # Paso 3: Instalar dependencias
+      - name: Instalar dependencias
+        run: npm install
+
+      # Paso 4: Ejecutar las pruebas
+      - name: Ejecutar pruebas
+        run: npm test

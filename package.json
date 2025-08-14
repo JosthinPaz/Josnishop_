@@ -1,0 +1,29 @@
+{
+  "name": "josnishop_",
+  "version": "1.0.0",
+  "description": "Este proyecto es una tienda en línea desarrollada con React (frontend) y FastAPI (backend).",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+  "testMatch": ["**/__tests__/**/*.test.js"]
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosthinPaz/Josnishop_.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosthinPaz/Josnishop_/issues"
+  },
+  "homepage": "https://github.com/JosthinPaz/Josnishop_#readme",
+  "devDependencies": {
+    "jest": "^30.0.5"
+  }
+}
