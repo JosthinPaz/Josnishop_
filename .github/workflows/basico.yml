@@ -31,4 +31,11 @@ jobs:
 
       # Paso 4: Ejecutar las pruebas
       - name: Ejecutar pruebas
+        run: npm test  
+
+# Jest
+      - name: Set Jest permissions
+        run: chmod +x node_modules/.bin/jest
+                
+      - name: Ejecutar pruebas
         run: npm test
